@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftui-introspect",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sergeirr/swiftui-introspect",
+      "state" : {
+        "branch" : "fix-watch-os-preview-build",
+        "revision" : "31392559792971f90c0b8fc206d90a35f968f0be"
+      }
+    }
+  ],
+  "version" : 2
+}

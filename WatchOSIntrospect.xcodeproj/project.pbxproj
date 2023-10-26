@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE271F802AEA56350073251A /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = DE271F7F2AEA56350073251A /* SwiftUIIntrospect */; };
 		DE6EB9AF2AEA4E3400F10C90 /* WatchOSIntrospectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6EB9AE2AEA4E3400F10C90 /* WatchOSIntrospectApp.swift */; };
 		DE6EB9B12AEA4E3400F10C90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6EB9B02AEA4E3400F10C90 /* ContentView.swift */; };
 		DE6EB9B32AEA4E3500F10C90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6EB9B22AEA4E3500F10C90 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE271F802AEA56350073251A /* SwiftUIIntrospect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +149,9 @@
 				DE6EB9BE2AEA4E3500F10C90 /* PBXTargetDependency */,
 			);
 			name = WatchOSIntrospect;
+			packageProductDependencies = (
+				DE271F7F2AEA56350073251A /* SwiftUIIntrospect */,
+			);
 			productName = WatchOSIntrospect;
 			productReference = DE6EB9AB2AEA4E3400F10C90 /* WatchOSIntrospect.app */;
 			productType = "com.apple.product-type.application";
@@ -195,6 +200,9 @@
 				Base,
 			);
 			mainGroup = DE6EB9A22AEA4E3400F10C90;
+			packageReferences = (
+				DE271F7E2AEA56350073251A /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
+			);
 			productRefGroup = DE6EB9AC2AEA4E3400F10C90 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -537,6 +545,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE271F7E2AEA56350073251A /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sergeirr/swiftui-introspect";
+			requirement = {
+				branch = "fix-watch-os-preview-build";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE271F7F2AEA56350073251A /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE271F7E2AEA56350073251A /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = SwiftUIIntrospect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE6EB9A32AEA4E3400F10C90 /* Project object */;
 }
