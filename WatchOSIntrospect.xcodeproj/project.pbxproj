@@ -16,6 +16,7 @@
 		DE6EB9C32AEA4E3500F10C90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6EB9C22AEA4E3500F10C90 /* ContentView.swift */; };
 		DE6EB9C52AEA4E3600F10C90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6EB9C42AEA4E3600F10C90 /* Assets.xcassets */; };
 		DE6EB9C82AEA4E3600F10C90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6EB9C72AEA4E3600F10C90 /* Preview Assets.xcassets */; };
+		DE6EB9D42AEA54C400F10C90 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = DE6EB9D32AEA54C400F10C90 /* SwiftUIIntrospect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6EB9D42AEA54C400F10C90 /* SwiftUIIntrospect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +149,9 @@
 				DE6EB9BE2AEA4E3500F10C90 /* PBXTargetDependency */,
 			);
 			name = WatchOSIntrospect;
+			packageProductDependencies = (
+				DE6EB9D32AEA54C400F10C90 /* SwiftUIIntrospect */,
+			);
 			productName = WatchOSIntrospect;
 			productReference = DE6EB9AB2AEA4E3400F10C90 /* WatchOSIntrospect.app */;
 			productType = "com.apple.product-type.application";
@@ -195,6 +200,9 @@
 				Base,
 			);
 			mainGroup = DE6EB9A22AEA4E3400F10C90;
+			packageReferences = (
+				DE6EB9D22AEA54C400F10C90 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = DE6EB9AC2AEA4E3400F10C90 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -537,6 +545,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE6EB9D22AEA54C400F10C90 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE6EB9D32AEA54C400F10C90 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE6EB9D22AEA54C400F10C90 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = SwiftUIIntrospect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE6EB9A32AEA4E3400F10C90 /* Project object */;
 }
